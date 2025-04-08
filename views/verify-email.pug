@@ -1,0 +1,19 @@
+extends layout
+
+block title 
+   | Verify Email
+
+block content
+  h1.page-header Email Verification
+  hr(style="margin: 12px 0; border: none; border-top: 1px solid rgba(0, 0, 0, 0.1)")
+  p.page-text 
+    | Dear #{username}
+  div(style="margin: 1.5rem 0")
+    p(class="page-text")
+      | You are required to provide this One-time pass code to verify your email.
+    p(style="color: rgba(0, 0, 0, 0.5); font-size: 12px; text-align: center")
+      | ONE-TIME PASSWORD
+    p(style="color: rgba(0, 0, 0, 0.9); text-align: center; font-weight: 700; font-size: 2rem; letter-spacing: 1rem; margin-top:-9px;")
+      | #{otp} 
+  div
+    p.page-text This is an automated message, please do not reply.
