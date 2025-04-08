@@ -28,10 +28,8 @@
 
 ## Project setup
 
-
-
 ```bash
-#Clone the project 
+#Clone the project
 $ git clone https://github.com/Owoeye1321/credpal.git
 
 #Install all dependencies
@@ -39,6 +37,12 @@ $ npm install
 
 #Create a dot env file
 $ cp .env.example .env
+
+$ Update your .env variables (DATABASE_URL); postgressql
+$ Install all dependencies (sudo npm install)
+$ Run migration with prisma (sudo npx prisma migrate dev --name name)
+$ Generate Prisma Client ( sudo npx prisma generate)
+$ Run the api (npm run start:dev)
 
 #Update your database url
 ```
